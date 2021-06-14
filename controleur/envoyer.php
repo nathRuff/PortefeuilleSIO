@@ -1,0 +1,44 @@
+﻿<?php
+	$dated=dateTime($_POST['dated']);
+	$datef=dateTime($_POST['datef']);
+	$intitule=addslashes($_POST['intitule']);
+	$lieu=addslashes($_POST['lieu']);
+	$modalite=$_POST['modalite'];
+	$desc=addslashes($_POST['desc']);
+	if(isset($_POST['c1']))
+	{
+		$c1=1;
+	}
+	else
+	{
+		$c1=0;
+	}
+	
+	if(isset($_POST['c2']))
+	{
+		$c2=1;
+	}
+	else
+	{
+		$c2=0;
+	}
+
+	if(isset($_POST['c3']))
+	{
+		$c3=1;
+	}
+	else
+	{
+		$c3=0;
+	}
+	
+	if(isset($_POST['c4']))
+	{
+		$c4=1;
+	}
+	else
+	{
+		$c4=0;
+	}
+	include('modele/envoyer.php');
+?>
